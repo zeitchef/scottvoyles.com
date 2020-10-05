@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col h-screen">
+  <div class="flex flex-col h-screen bg-snazzy-white text-snazzy-gray-800">
     <AppHeader />
     <Nuxt class="h-screen p-8" />
     <AppFooter />
@@ -18,11 +18,6 @@ html {
   box-sizing: border-box;
 }
 
-html, body {
-  background-color: var(--white);
-  color: var(--black);
-}
-
 *,
 *::before,
 *::after {
@@ -35,9 +30,12 @@ h1 { @apply text-4xl }
 h2 { @apply text-3xl }
 h3 { @apply text-2xl }
 
-a {
-  color: var(--pink);
-  text-decoration: underline;
+a:not(.footer-link) {
+  @apply font-bold text-snazzy-gray-700 border-b-2 border-blue-500;
+}
+
+a:not(.footer-link):visited {
+  @apply text-snazzy-gray-500;
 }
 
 ul { @apply list-none }
