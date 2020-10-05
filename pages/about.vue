@@ -12,13 +12,10 @@
 <script>
 export default{
   data() {
-    return {
-      title: 'About'
-    }
+    return {}
   }
 }
 </script>
 
 <style scoped>
-
 </style>
