@@ -1,7 +1,13 @@
 <template>
   <main class="flex items-center max-w-6xl px-8 mx-auto mt-8">
     <section class="flex-1 p-8 contact contact-left">
-      <form>
+      <form name="contact" method="post" netlify-honeypot="bot-field" netlify>
+        <div class="hidden">
+          <label for="bot-field">
+            Don't input text here if you're human:
+            <input type="text" name="bot-field" id="bot-field">
+          </label>
+        </div>
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" class="block w-full">
@@ -17,6 +23,7 @@
         <button type="submit" class="transiton-colors duration-500 ease-in-out hover:bg-snazzy-gray-900 hover:text-snazzy-gray-100">Send</button>
       </form>
     </section>
+
     <section class="flex flex-col items-start flex-1 p-8 mb-16 contact contact-right">
       <h1 class="mb-4">Thanks for stopping by</h1>
       <p class="mb-4">If you like my work, please feel free to write to me. I look forward to
