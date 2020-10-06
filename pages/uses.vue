@@ -17,18 +17,18 @@
     </section>
     <section>
       <h2>Apps</h2>
-      - Alfred
-      - Better Touch Tool
-      - DEVONthink Pro
-      - Things
-      - Figma
+      - <a href="https://alfredapp.com">Alfred</a>
+      - <a href="https://folivora.ai/">Better Touch Tool</a>
+      - <a href="https://www.devontechnologies.com/apps/devonthink">DEVONthink Pro 3.0</a>
+      - <a href="https://culturedcode.com/things/">Things</a>
+      - <a href="https://www.figma.com/">Figma</a> for wireframing and prototyping
     </section>
     <section>
       <h2>Desk & Other Gear</h2>
       - desk and legs
       - Mac mini 2020 32G RAM Spacegray
       - Apple Magic Trackpad 2 Spacegray
-      - Keychron K2 Mechanical Keyboard
+      - <a href="https://www.keychron.com/products/keychron-k2-wireless-mechanical-keyboard">Keychron K2 Mechanical Keyboard</a>
       - <a href="https://www.audio-technica.com/en-us/ath-m40x">audio-technica ATH-MT40x</a> Professional Monitor Headphones
       - <a href="https://fiio.com/q1mkii">FiiO Q1 Mark II USB DAC</a>
     </section>
@@ -54,4 +54,6 @@ export default {
 section { @apply mt-8 }
 h2 { @apply font-medium }
 p { @apply mt-4 }
+a { @apply font-medium opacity-75 transition-opacity duration-500 }
+a:hover { @apply opacity-100 }
 </style>
