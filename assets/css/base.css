@@ -32,5 +32,5 @@ input, textarea {
 }
 
 button {
-  @apply w-32 p-2 mt-8 uppercase border border-snazzy-gray-800 font-medium
+  @apply w-32 p-2 mt-8 uppercase border border-snazzy-gray-800 font-medium outline-none
 }
