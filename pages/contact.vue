@@ -1,6 +1,41 @@
 <template>
-  <div>
-  </div>
+  <main class="flex items-center max-w-6xl px-8 mx-auto mt-8">
+    <section class="flex-1 p-8 contact contact-left">
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="block w-full">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="block w-full">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" id="" cols="30" rows="10" class=""></textarea>
+        </div>
+        <button type="submit" class="transiton-colors duration-500 ease-in-out hover:bg-snazzy-gray-900 hover:text-snazzy-gray-100">Send</button>
+      </form>
+    </section>
+    <section class="flex flex-col items-start flex-1 p-8 mb-16 contact contact-right">
+      <h1 class="mb-4">Thanks for stopping by</h1>
+      <p class="mb-4">If you like my work, please feel free to write to me. I look forward to
+      future collaborations with you.</p>
+
+      <!--
+      <address class="not-italic">
+        <div class="mb-4 address-group">
+          <h3>Phone</h3>
+          <a href="tel:004917625979591">+49 176 25979591</a>
+        </div>
+        <div class="address-group">
+          <h3>Email</h3>
+          <a href="mailto:zeitchef@gmail.com">zeitchef@gmail.com</a>
+        </div>
+      </address>
+      -->
+    </section>
+  </main>
 </template>
 
 <script>
@@ -8,4 +43,25 @@
 </script>
 
 <style scoped>
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  section { flex: 0; }
+
+  .contact {
+    padding: 0;
+    min-width: 100%;
+  }
+  .contact-left { order: 2; }
+  .contact-right { order: 1; }
+}
+
+input, textarea {
+  @apply block w-full
+}
+
+.form-group {
+  @apply border-b border-snazzy-gray-300 mb-4
+}
 </style>
