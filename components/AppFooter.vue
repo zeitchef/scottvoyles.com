@@ -21,8 +21,17 @@ export default {
   },
   computed: {
     pageTitle() {
-      const path = this.$nuxt.$route.path.substring(1)
-      return path ? path : 'zeitchef@gmail.com'
+      const path = this.$nuxt.$route.path
+      const lastChar = path.substring((path.length - 1))
+
+      if (lastChar === '/' && path.length > 1) {
+        // remove trailing '/'
+        return path.substring(0, path.length - 1)
+      } else if (path === '/') {
+        return 'zeitchef@gmail.com'
+      } else {
+        return path
+      }
     }
   }
 }
