@@ -1,45 +1,16 @@
 <template>
-  <div class="flex flex-col h-screen bg-snazzy-white text-snazzy-gray-800">
+  <div class="flex flex-col min-h-screen bg-white text-snazzy-gray-800 gradient">
     <AppHeader />
-    <Nuxt class="h-screen p-8" />
-    <AppFooter />
+    <Nuxt class="content" />
+    <AppFooter class="flex-shrink-1"/>
   </div>
 </template>
 
 <style>
-html {
-  font-family: var(--font-stack);
-  font-size: var(--font-size);
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+.content {flex: 1 0 auto; }
+
+/* gradientmagic.com */
+.gradient {
+  background: linear-gradient(339deg, rgba(47, 47, 47,0.02) 0%, rgba(47, 47, 47,0.02) 42%,transparent 42%, transparent 99%,rgba(17, 17, 17,0.02) 99%, rgba(17, 17, 17,0.02) 100%),linear-gradient(257deg, rgba(65, 65, 65,0.02) 0%, rgba(65, 65, 65,0.02) 11%,transparent 11%, transparent 92%,rgba(53, 53, 53,0.02) 92%, rgba(53, 53, 53,0.02) 100%),linear-gradient(191deg, rgba(5, 5, 5,0.02) 0%, rgba(5, 5, 5,0.02) 1%,transparent 1%, transparent 45%,rgba(19, 19,19,0.02) 45%, rgba(19, 19, 19,0.02) 100%),linear-gradient(29deg, rgba(28, 28, 28,0.02) 0%, rgba(28, 28, 28,0.02) 33%,transparent 33%, transparent 40%,rgba(220, 220, 220,0.02) 40%, rgba(220, 220, 220,0.02) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255)) center center no-repeat;
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-h1 { @apply text-4xl }
-h2 { @apply text-3xl }
-h3 { @apply text-2xl }
-
-a:not(.footer-link) {
-  @apply font-bold text-snazzy-gray-700 border-b-2 border-blue-500;
-}
-
-a:not(.footer-link):visited {
-  @apply text-snazzy-gray-500;
-}
-
-ul { @apply list-none }
-li { @apply pl-4 }
-
-.heading { font-size: 32px; }
 </style>
