@@ -10,15 +10,15 @@
         </div>
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" id="name" class="block w-full">
+          <input type="text" id="name" name="name" class="block w-full">
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" class="block w-full">
+          <input type="email" id="email" name="email" class="block w-full">
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea name="message" id="" cols="30" rows="10" class=""></textarea>
+          <textarea name="message" id="message" cols="30" rows="10" class=""></textarea>
         </div>
         <button type="submit" class="transiton-colors duration-500 ease-in-out hover:bg-snazzy-gray-900 hover:text-snazzy-gray-100">Send</button>
       </form>
