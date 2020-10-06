@@ -1,0 +1,36 @@
+html {
+  font-family: var(--font-stack);
+  font-size: var(--font-size);
+  word-spacing: 1px;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1 { @apply text-4xl }
+h2 { @apply text-3xl }
+h3 { @apply text-2xl }
+
+a:not(.footer-link) {
+  @apply border-b border-snazzy-gray-900
+}
+
+/* visited, focused */
+
+ul { @apply list-none }
+li { @apply pl-4 }
+
+.heading { font-size: 32px; }
+
+input, textarea {
+  @apply bg-transparent border-none rounded-none outline-none resize-none py-2
+}
+
+button {
+  @apply w-32 p-2 mt-8 uppercase border border-snazzy-gray-800
+}
