@@ -52,5 +52,6 @@ export default {
 
 <style scoped>
 section { @apply mt-8 }
+h2 { @apply font-medium }
 p { @apply mt-4 }
 </style>

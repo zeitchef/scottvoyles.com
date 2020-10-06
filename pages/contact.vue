@@ -25,22 +25,9 @@
     </section>
 
     <section class="flex flex-col items-start flex-1 p-8 mb-16 contact contact-right">
-      <h1 class="mb-4">Thanks for stopping by</h1>
+      <h1 class="mb-4 font-medium">Thanks for stopping by</h1>
       <p class="mb-4">If you like my work, please feel free to write to me. I look forward to
       future collaborations with you.</p>
-
-      <!--
-      <address class="not-italic">
-        <div class="mb-4 address-group">
-          <h3>Phone</h3>
-          <a href="tel:004917625979591">+49 176 25979591</a>
-        </div>
-        <div class="address-group">
-          <h3>Email</h3>
-          <a href="mailto:zeitchef@gmail.com">zeitchef@gmail.com</a>
-        </div>
-      </address>
-      -->
     </section>
   </main>
 </template>
