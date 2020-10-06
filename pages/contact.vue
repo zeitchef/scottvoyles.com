@@ -26,8 +26,7 @@
 
     <section class="flex flex-col items-start flex-1 p-8 mb-16 contact contact-right">
       <h1 class="mb-4 font-medium">Thanks for stopping by</h1>
-      <p class="mb-4">If you like my work, please feel free to write to me. I look forward to
-      future collaborations with you.</p>
+      <p class="mb-4">If you like my work, please feel free to write to me. I look forward to seeing what we can do together.</p>
     </section>
   </main>
 </template>
