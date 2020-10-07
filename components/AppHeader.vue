@@ -19,12 +19,13 @@ export default {
   },
   methods: {
     toggleColorMode() {
-      const mode = Array.from(document.getElementById('html').classList)[0]
-      if (mode == 'dark') {
+      //const mode = Array.from(document.getElementById('html').classList)[0]
+      if (this.$colorMode.value == 'dark') {
         this.$colorMode.preference = 'light'
       } else {
         this.$colorMode.preference = 'dark'
       }
+      console.warn(this.$colorMode.preference, this.$colorMode.value)
     }
   }
 }
