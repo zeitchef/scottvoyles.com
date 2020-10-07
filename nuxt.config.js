@@ -7,6 +7,7 @@ export default {
     title: 'Scott Voyles',
     htmlAttrs: {
       lang: 'en-US',
+      id: 'html'
     },
     meta: [
       { charset: 'utf-8' },
@@ -40,6 +41,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -60,5 +62,11 @@ export default {
     port: 8000,
     host: '0.0.0.0',
     timing: false,
+  },
+
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+    classSuffix: '',
   },
 };

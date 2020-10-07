@@ -1,8 +1,12 @@
 module.exports = {
+  experimental: {
+    darkModeVariant: true
+  },
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
+  dark: 'class',
   theme: {
     extend: {
       colors: {
@@ -23,8 +27,9 @@ module.exports = {
     },
   },
   variants: {
-    backgroundColor: [ 'hover', 'focus', 'active' ],
+    backgroundColor: [ 'hover', 'focus', 'active', 'dark' ],
+    borderColor: [ 'dark' ],
     opacity: [ 'hover', 'focus', 'active' ],
-    text: [ 'hover', 'focus', 'active' ],
+    text: [ 'hover', 'focus', 'active', 'dark' ],
   }
 };
