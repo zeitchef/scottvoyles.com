@@ -25,7 +25,6 @@ export default {
       } else {
         this.$colorMode.preference = 'dark'
       }
-      //this.$emit('update', this.$colorMode.preference)
     }
   }
 }
