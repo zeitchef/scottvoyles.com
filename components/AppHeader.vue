@@ -18,11 +18,13 @@ export default {
   },
   methods: {
     toggleColorMode() {
-      if (this.$colorMode.preference === 'system' || this.$colorMode.preference === 'dark') {
+      const mode = Array.from(document.getElementById('html').classList)[0]
+      if (mode == 'dark') {
         this.$colorMode.preference = 'light'
       } else {
         this.$colorMode.preference = 'dark'
       }
+      this.$emit('update', this.$colorMode.preference)
     }
   }
 }
