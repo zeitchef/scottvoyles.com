@@ -1,12 +1,13 @@
 toggleDarkMode<template>
   <div id="footer" class="flex items-center justify-between w-screen h-12 p-8">
-    <p>
-      <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
-        <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" d="M4 7C4 6.44772 4.44772 6 5 6H19C19.5523 6 20 6.44772 20 7C20 7.55228 19.5523 8 19 8H5C4.44772 8 4 7.55228 4 7ZM4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12ZM4 17C4 16.4477 4.44772 16 5 16H19C19.5523 16 20 16.4477 20 17C20 17.5523 19.5523 18 19 18H5C4.44772 18 4 17.5523 4 17Z" fill="#282828"></path>
-      </svg>
-    </p>
+    <!-- HamburgerMenu -->
+    <p></p>
+
+    <!-- Color Mode Switcher -->
     <div id="mode-toggle" @click="toggleColorMode" class="cursor-pointer">
-      <slot></slot>
+      <svg width="1.25em" height="1.25em" viewBox="0 0 16 16" class="outline-none bi bi-circle-half" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M8 15V1a7 7 0 1 1 0 14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </svg>
     </div>
   </div>
 </template>
