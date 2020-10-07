@@ -11,6 +11,7 @@ export default {
   data() {
     return {}
   },
+  /*
   methods: {
     toggleGradient(value) {
       let el = document.getElementById('bg-gradient')
@@ -28,6 +29,7 @@ export default {
     let el = document.getElementById('bg-gradient')
     el.classList.add(`${mode}-gradient`)
   }
+  */
 }
 </script>
 
