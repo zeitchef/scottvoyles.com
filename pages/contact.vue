@@ -20,7 +20,8 @@
           <label for="message">Message</label>
           <textarea name="message" id="message" cols="30" rows="10" class=""></textarea>
         </div>
-        <button type="submit" class="transiton-colors duration-500 ease-in-out hover:bg-snazzy-gray-900 hover:text-snazzy-gray-100">Send</button>
+        <button type="submit"
+                class="transiton-colors duration-500 ease-in-out hover:bg-snazzy-gray-900 hover:text-snazzy-gray-100 dark:border-snazzy-white dark:hover:text-snazzy-gray-800 dark:hover:bg-snazzy-white">Send</button>
       </form>
     </section>
 
