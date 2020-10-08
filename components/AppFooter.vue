@@ -24,7 +24,7 @@ export default {
   computed: {
     pageTitle() {
       const path = this.$route.path
-      return path.substring(0, path.length) || 'zeitchef@gmail.com'
+      return path === '/' ? 'zeitchef@gmail.com' : path.substring(0, path.length)
     }
   }
 }
