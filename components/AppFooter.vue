@@ -1,13 +1,13 @@
 <template>
   <div id="footer" class="flex items-center justify-center w-screen h-12 p-8 md:justify-between">
-    <p v-if="pageTitle === 'zeitchef@gmail.com'">
+    <p v-if="$route.path == '/'" class="not-social">
       <a class="footer-link" href="mailto:zeitchef@gmail.com">{{ pageTitle }}</a>
     </p>
-    <p v-else>
-      {{ pageTitle }}
-    </p>
-    <div v-if="$route.path == '/about'">02</div>
-    <div v-if="$route.path == '/tools'">03</div>
+    <p v-else-if="$route.path == '/contact'" class="not-social">{{ pageTitle }}</p>
+    <p v-else>{{ pageTitle }}</p>
+
+    <div v-if="$route.path == '/about'" class="invisible md:visible">02</div>
+    <div v-if="$route.path == '/tools'" class="invisible md:visible">03</div>
     <div id="social" v-if="$route.path == '/' || $route.path == '/contact'">
       <a href="https://github.com/zeitchef" class="footer-link">github</a>
       <a href="https://twitter.com/zeitchef" class="footer-link">twitter</a>
@@ -24,15 +24,7 @@ export default {
   computed: {
     pageTitle() {
       const path = this.$route.path
-      const lastChar = path.substring((path.length - 1))
-
-      if (lastChar === '/' && path.length > 1) {
-        return path.substring(0, path.length - 1) // remove trailing '/'
-      } else if (path === '/') {
-        return 'zeitchef@gmail.com'
-      } else {
-        return path
-      }
+      return path.substring(0, path.length) || 'zeitchef@gmail.com'
     }
   }
 }
@@ -42,7 +34,7 @@ export default {
 #social .footer-link { @apply ml-4 }
 
 @media (max-width: 768px) {
-  #social {
+  .not-social {
     display: none;
   }
 }
