@@ -6,7 +6,9 @@
     <p v-else>
       {{ pageTitle }}
     </p>
-    <div id="social">
+    <div v-if="$route.path == '/about'">02</div>
+    <div v-if="$route.path == '/tools'">03</div>
+    <div id="social" v-if="$route.path == '/' || $route.path == '/contact'">
       <a href="https://github.com/zeitchef" class="footer-link">github</a>
       <a href="https://twitter.com/zeitchef" class="footer-link">twitter</a>
       <a href="https://linkedin.com/in/zeitchef" class="footer-link">linkedin</a>
@@ -21,12 +23,11 @@ export default {
   },
   computed: {
     pageTitle() {
-      const path = this.$nuxt.$route.path
+      const path = this.$route.path
       const lastChar = path.substring((path.length - 1))
 
       if (lastChar === '/' && path.length > 1) {
-        // remove trailing '/'
-        return path.substring(0, path.length - 1)
+        return path.substring(0, path.length - 1) // remove trailing '/'
       } else if (path === '/') {
         return 'zeitchef@gmail.com'
       } else {
@@ -38,7 +39,7 @@ export default {
 </script>
 
 <style scoped>
-#social .footer-link { @apply pl-4 }
+#social .footer-link { @apply ml-4 }
 
 @media (max-width: 768px) {
   #social {
