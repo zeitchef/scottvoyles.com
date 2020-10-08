@@ -1,5 +1,6 @@
 <template>
   <main class="flex items-center max-w-6xl px-8 mx-auto mt-8">
+
     <section class="flex-1 p-8 mb-16 md:mb-0 contact contact-left">
       <form name="contact" method="post" netlify-honeypot="bot-field" netlify>
         <div class="hidden">
@@ -20,8 +21,8 @@
           <label for="message">Message</label>
           <textarea name="message" id="message" cols="30" rows="10" class=""></textarea>
         </div>
-        <button type="submit"
-                class="transiton-colors duration-500 ease-in-out hover:bg-snazzy-gray-900 hover:text-snazzy-gray-100 dark:border-snazzy-white dark:hover:text-snazzy-gray-800 dark:hover:bg-snazzy-white">Send
+        <button type="submit" class="transiton-colors duration-500 ease-in-out hover:bg-snazzy-gray-900 hover:text-snazzy-gray-100 dark:border-snazzy-white dark:hover:text-snazzy-gray-800 dark:hover:bg-snazzy-white">
+          Send
         </button>
       </form>
     </section>
@@ -32,10 +33,6 @@
     </section>
   </main>
 </template>
-
-<script>
-  export default{}
-</script>
 
 <style scoped>
 @media (max-width: 768px) {
