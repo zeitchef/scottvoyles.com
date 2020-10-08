@@ -29,7 +29,6 @@ export default {
     },
     toggleClass(el, stringClass) {
       el.classList.toggle(stringClass)
-      console.log(el.classList)
     }
   },
   mounted() {
@@ -94,7 +93,7 @@ export default {
 }
 
 .nav::before {
-  transition-dealy: 100ms;
+  transition-delay: 100ms;
 }
 
 /* active state */
