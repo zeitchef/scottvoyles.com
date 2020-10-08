@@ -1,4 +1,4 @@
-toggleDarkMode<template>
+<template>
   <div id="footer" class="flex items-center justify-between w-screen h-12 p-8">
     <!-- HamburgerMenu -->
     <p></p>
