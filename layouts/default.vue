@@ -6,14 +6,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {}
-  }
-}
-</script>
-
 <style>
 .content {flex: 1 0 auto; }
 </style>
