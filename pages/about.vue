@@ -3,7 +3,7 @@
     <div class="page__left">
       <h1 class="mb-4">Scott Voyles</h1>
 
-      <p>Since 2016, I've worked professionally as a frontend software developer in startup and large corporate settings, as well as freelance. My clients include global agencies all the way to individuals.</p>
+      <p>Since 2016, I've worked professionally as a frontend software developer in startup and large corporate settings, and as freelancer. My clients include global agencies all the way to individuals.</p>
 
       <p>Music has always been my life.</p>
 
