@@ -18,7 +18,7 @@
 
     <section>
       <h2>Apps</h2>
-      <p>I like working with as small a subset of tools as possible, to really master them. That's why I use <a href="https://alfredapp.com">Alfred</a> as the central piece in almost all my macOS-related workflows. I use it to launch applications, snippet expansion, as universal clipboard manager, for file-related actions, web and document searches, running system commands and numerous other personal workflows.</p>
+      <p>I like working with as small a subset of tools as possible, to really master them. That's why I use <a href="https://alfredapp.com">Alfred</a> as the central piece in almost all my macOS-related workflows. I use it for launching applications, snippet expansion, as a universal clipboard manager, for file-related actions, web and document searches, running system commands and numerous other personal workflows.</p>
 
       <p>I also use <a href="https://folivora.ai/">Better Touch Tool</a> for mapping hotkeys and trackpad gestures. For most of my automation needs, I use an open-source Hazel alternative call <a href="">organize</a> with a few simple rules to manage my folders.</p>
 
@@ -31,8 +31,7 @@
       <h2>Desk & Other Gear</h2>
       <p>My current workhorse is a 2020 <a href="https://www.apple.com/mac-mini/">Mac mini</a> 6-core i7 upgraded to 32GB RAM. I use an Apple Magic Trackpad 2 and a wireless <a href="https://www.keychron.com/products/keychron-k2-wireless-mechanical-keyboard">Keychron K2</a> mechanical keyboard.</p>
 
-      <p>My desktop audio setup is intentionally simple: I use a pair of <a href="https://www.audio-technica.com/en-us/ath-m40x">Audio-Technica
-        ATH-MT40x</a> professional monitor headphones for their detailed clarity, usually paired with the <a href="https://fiio.com/q1mkii">FiiO Q1 Mark II</a> USB DAC and headphone amp that supports DSD and PCM playback up to 32bit/384kHz.</p>
+      <p>My desktop audio setup is intentionally simple: I use a pair of <a href="https://www.audio-technica.com/en-us/ath-m40x">Audio-Technica ATH-MT40x</a> professional monitor headphones for their detailed clarity, usually paired with the <a href="https://ifi-audio.com/products/zen-dac/">iFi Zen</a> DAC and headphone amp.</p>
     </section>
   </main>
 </template>
