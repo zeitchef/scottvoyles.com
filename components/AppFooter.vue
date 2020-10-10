@@ -37,7 +37,7 @@ export default {
 </script>
 
 <style scoped>
-#social .nav-link { @apply ml-4 }
+#social .nav-link { @apply ml-2 }
 
 @media (max-width: 768px) {
   .not-social {
