@@ -7,7 +7,7 @@ export default {
     title: 'Scott Voyles',
     htmlAttrs: {
       lang: 'en-US',
-      id: 'html'
+      id: 'html',
     },
     meta: [
       { charset: 'utf-8' },
@@ -45,7 +45,11 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['@nuxtjs/axios', '@nuxt/content', '@nuxtjs/robots'],
+  modules: ['@nuxtjs/axios', '@nuxt/content', '@nuxtjs/robots', '@nuxtjs/gtm'],
+
+  gtm: {
+    id: 'GTM-W5FBR23',
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
