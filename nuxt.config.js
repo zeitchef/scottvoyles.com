@@ -19,12 +19,7 @@ export default {
       },
     ],
     link: [
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap',
-      },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
   },
 
@@ -39,13 +34,23 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
+    '@nuxtjs/google-fonts',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: ['@nuxtjs/axios', '@nuxt/content', '@nuxtjs/robots', '@nuxtjs/gtm'],
+
+  googleFonts: {
+    families: {
+      'IBM+Plex+Mono': {
+        wght: [400, 500],
+      },
+    },
+    display: 'swap',
+    download: true,
+  },
 
   gtm: {
     id: 'GTM-W5FBR23',
