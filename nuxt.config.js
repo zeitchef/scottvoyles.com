@@ -60,7 +60,13 @@ export default {
   axios: {},
 
   // Content module configuration (https://go.nuxtjs.dev/content-config)
-  content: {},
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-nord.css'
+      }
+    }
+  },
 
   robots: {},
 

@@ -1,4 +1,5 @@
 <template>
+  <!-- Menu concept -->
   <!-- https://codepen.io/RSH87/pen/rmgYbo?editors=0100 -->
   <div class="p8">
     <n-link to="/" class="nav-link">home</n-link>
