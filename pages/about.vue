@@ -24,12 +24,4 @@
 p {
   @apply mb-4
 }
-
-a {
-  @apply font-medium opacity-75 transition-opacity duration-500 border-snazzy-gray-300
-}
-
-a:hover {
-  @apply opacity-100
-}
 </style>
