@@ -15,22 +15,49 @@ html, body {
 h1 { @apply text-4xl }
 h2 { @apply text-3xl }
 h3 { @apply text-2xl }
+h4 { @apply text-xl }
 
+.heading { font-size: 32px; }
+
+/* Links */
 a:not(.nav-link) {
-  @apply border-b border-snazzy-gray-900
+  @apply border-b border-snazzy-gray-500 font-medium opacity-75 transition-opacity duration-500
 }
 
-/* visited, focused */
+a:not(.nav-link):hover {
+  @apply opacity-100
+}
 
 ul { @apply list-none }
 li { @apply pl-4 }
 
-.heading { font-size: 32px; }
-
+/* Inputs */
 input, textarea {
   @apply bg-transparent border-none rounded-none outline-none resize-none py-2
 }
 
+/* Buttons */
 button {
   @apply w-32 p-2 mt-8 uppercase border border-snazzy-gray-800 font-medium outline-none
+}
+
+/* Nuxt Content */
+.nuxt-content a {
+  @apply font-medium opacity-75 transition-opacity duration-500 border-snazzy-gray-300
+}
+
+.nuxt-content a:hover {
+  @apply opacity-100
+}
+
+.nuxt-content-highlight {
+  @apply relative my-4
+}
+
+.nuxt-content-highlight .filename {
+  @apply absolute right-0 text-gray-600 font-light z-10 mr-2 mt-1 text-sm
+}
+
+.scrolltop {
+  @apply block mb-8 text-sm
 }
