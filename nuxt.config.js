@@ -61,6 +61,7 @@ export default {
 
   // Content module configuration (https://go.nuxtjs.dev/content-config)
   content: {
+    fullTextSearchFields: ['title', 'description', 'tags'],
     markdown: {
       prism: {
         theme: 'prism-themes/themes/prism-nord.css'

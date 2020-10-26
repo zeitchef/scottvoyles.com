@@ -18,6 +18,8 @@
     </details>
 
     <nuxt-content :document="cheatsheet" class="my-8" />
+
+    <pre>{{ cheatsheet }}</pre>
   </article>
 </template>
 
