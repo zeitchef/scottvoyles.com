@@ -1,5 +1,9 @@
 ---
 title: nuxt
+tags:
+  - javascript
+  - vue
+  - framework
 ---
 
 ## Reference

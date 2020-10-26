@@ -1,5 +1,9 @@
 ---
 title: vuex
+tags:
+  - vue
+  - state management
+  - library
 ---
 
 ### Installation

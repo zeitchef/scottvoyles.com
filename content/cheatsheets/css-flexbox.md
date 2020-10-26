@@ -1,6 +1,9 @@
 ---
 title: flexbox
-description: css flexible box model
+description: css flexible box
+tags:
+  - css
+  - layout
 ---
 
 ### Giving wrapped flexbox items vertical spacing

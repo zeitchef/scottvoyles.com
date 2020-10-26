@@ -1,6 +1,9 @@
 ---
 title: tmuxinator
 description: tmux sessions management
+tags:
+  - terminal
+  - workflow
 ---
 
 ### Install

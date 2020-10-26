@@ -1,6 +1,9 @@
 ---
 title: httpie
 description: command-line HTTP client
+tags:
+  - http
+  - cli
 ---
 
 ### Install

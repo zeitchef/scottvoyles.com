@@ -1,7 +1,9 @@
 ---
 title: bem
 description: Block-Element-Modifier
-bgColor: snazzy-blue
+tags:
+  - css
+  - methodology
 ---
 Block Element Modifier is a methodology that helps you to create reusable
 components and code sharing in front-end development.
