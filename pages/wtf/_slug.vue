@@ -1,9 +1,8 @@
 <template>
   <article class="w-full max-w-6xl px-8 mx-auto mt-8 mb-16 md:mb-0">
     <h1 name="top">{{ cheatsheet.title }}</h1>
-    <p v-if="cheatsheet.description">{{ cheatsheet.description }}</p>
-    <p class="text-sm text-snazzy-gray-500 dark:text-snazzy-gray-300">
-      Last updated: {{ formatDate(cheatsheet.updatedAt) }}
+    <p class="text-sm">updated:
+      <span class="text-snazzy-gray-500 dark:text-snazzy-gray-300">{{ formatDate(cheatsheet.updatedAt) }}</span>
     </p>
 
     <details class="mt-8">
@@ -18,25 +17,23 @@
     </details>
 
     <nuxt-content :document="cheatsheet" class="my-8" />
-
-    <pre>{{ cheatsheet }}</pre>
   </article>
 </template>
 
 <script>
-  export default{
-    async asyncData({ $content, params }) {
-      const cheatsheet = await $content('cheatsheets', params.slug).fetch()
+export default{
+  async asyncData({ $content, params }) {
+    const cheatsheet = await $content('cheatsheets', params.slug).fetch()
 
-      return { cheatsheet }
-    },
-    methods: {
-      formatDate(date) {
-        const options = { year: 'numeric', month: 'long', day: 'numeric' }
-        return new Date(date).toLocaleDateString('en', options)
-      }
+    return { cheatsheet }
+  },
+  methods: {
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
     }
   }
+}
 </script>
 
 <style scoped>

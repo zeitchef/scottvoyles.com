@@ -18,9 +18,7 @@ export default {
         content: 'The website of Scott Voyles, developer and musician',
       },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -61,12 +59,12 @@ export default {
 
   // Content module configuration (https://go.nuxtjs.dev/content-config)
   content: {
-    fullTextSearchFields: ['title', 'description', 'tags'],
+    fullTextSearchFields: ['title', 'description', 'text'],
     markdown: {
       prism: {
-        theme: 'prism-themes/themes/prism-nord.css'
-      }
-    }
+        theme: 'prism-themes/themes/prism-nord.css',
+      },
+    },
   },
 
   robots: {},

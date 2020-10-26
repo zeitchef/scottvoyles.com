@@ -5,40 +5,35 @@
       autocomplete="off"
       placeholder="Search cheatsheets..."
       class="w-full placeholder-snazzy-gray-300"
-      v-model="query"
+      v-model="searchQuery"
     />
-
-    <!-- Filter cheatsheet tags -->
-    <ul v-if="cheatsheets.length">
-      <li v-for="cheatsheet in cheatsheets" :key="cheatsheet.slug">
-        <NuxtLink :to="{ name: 'cheatsheet-slug', params: { slug: cheatsheet.slug } }">
-          {{ cheatsheet.title }}
-        </NuxtLink>
-      </li>
-    </ul>
   </div>
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        query: '',
-        cheatsheets: []
+export default {
+  data () {
+    return {
+      searchQuery: '',
+      searchResults: []
+    }
+  },
+  watch: {
+    async searchQuery(searchQuery) {
+      if (!searchQuery) {
+        this.searchResults = []
+        this.$emit('clear-results')
       }
-    },
-    watch: {
-      async searchQuery(query) {
-        if (!query) {
-          this.cheatsheets = []
-          return
-        }
-        this.cheatsheets = await this.$content('cheatsheets')
-          .search('title', query)
-          .fetch()
-      }
+
+      this.searchResults = await this.$content('cheatsheets')
+        .search(searchQuery)
+        .sortBy('title', 'asc')
+        .fetch()
+
+      this.$emit('filter-cheatsheets', this.searchResults)
     }
   }
+}
 </script>
 
 <style scoped>
