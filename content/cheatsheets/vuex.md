@@ -1,6 +1,6 @@
 ---
 title: vuex
-description: vue, state management, library
+description: vue, state management, library, javascript
 ---
 
 ### Installation
