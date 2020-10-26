@@ -1,9 +1,6 @@
 ---
 title: fetch
-description: fetch resources asynchronously
-tags:
-  - javascript
-  - api
+description: api, javascript, web
 ---
 ### Syntax
 

@@ -1,9 +1,6 @@
 ---
 title: organize
-description: automate file organization
-tags:
-  - cli
-  - productivity
+description: cli, productivity
 ---
 
 ## Reference

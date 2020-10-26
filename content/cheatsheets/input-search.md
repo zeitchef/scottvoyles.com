@@ -1,8 +1,6 @@
 ---
 title: input-search
-tags:
-  - css
-  - reset
+description: css, reset, html, element
 ---
 
 ### Remove default styles

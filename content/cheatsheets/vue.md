@@ -1,9 +1,6 @@
 ---
 title: vue
-description: progressive js framework
-tags:
-  - javascript
-  - framework
+description: javascript, framework
 ---
 
 ## Reference

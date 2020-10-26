@@ -1,10 +1,6 @@
 ---
 title: switch
-tags:
-  - javascript
-  - syntax
-  - fundamental
-  - control flow
+description: javascript, syntax, fundamental, control flow
 ---
 A  switch statement evalutates an expression and looks for the first case that
 matches. If no match is found an optional default clause will be used, otherwise

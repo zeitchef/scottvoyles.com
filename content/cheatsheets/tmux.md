@@ -1,9 +1,6 @@
 ---
 title: tmux
-description: terminal multiplexer
-tags:
-  - terminal
-  - workflow
+description: terminal, workflow
 ---
 
 ### Aliases
