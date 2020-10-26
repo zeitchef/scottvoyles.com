@@ -6,13 +6,16 @@
       Last updated: {{ formatDate(cheatsheet.updatedAt) }}
     </p>
 
-    <nav class="mt-8">
-      <ul>
-        <li v-for="link in cheatsheet.toc" :key="link.id">
-          <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
-        </li>
-      </ul>
-    </nav>
+    <details class="mt-8">
+      <summary class="outline-none">Contents</summary>
+      <nav>
+        <ul>
+          <li v-for="link in cheatsheet.toc" :key="link.id">
+            <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+          </li>
+        </ul>
+      </nav>
+    </details>
 
     <nuxt-content :document="cheatsheet" class="my-8" />
   </article>
