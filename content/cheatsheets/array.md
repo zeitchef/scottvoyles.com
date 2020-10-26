@@ -6,8 +6,13 @@ description: javascript, datastructure, fundamentals
 ### Properties
 
 ```javascript
-Array.length
-Array.prototype
+Array.prototype.length      //> Boolean
+```
+
+### Detecting
+
+```javascript
+Array.isArray(arr)
 ```
 
 ### Creating
