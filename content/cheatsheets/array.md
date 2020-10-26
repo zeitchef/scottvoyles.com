@@ -6,13 +6,13 @@ description: javascript, datastructure, fundamentals
 ### Properties
 
 ```javascript
-Array.prototype.length      //> Boolean
+Array.prototype.length
 ```
 
 ### Detecting
 
 ```javascript
-Array.isArray(arr)
+Array.isArray(arr)            //> Boolean
 ```
 
 ### Creating
@@ -63,13 +63,13 @@ Array.prototype.splice()
 // emptying an array
 let arr = []
 let arr.length = 0
-arr.splice(0)               // remove from index 0 to end of array
+arr.splice(0)                 // remove from index 0 to end of array
 ```
 
 ### Modifying/Updating
 
 ```javascript
-// split(), join()
+split(), join()
 // Pruning - Array.length = value
 // Changing - Array[index] = value
 // Combining = [arr1, arr2]
@@ -82,10 +82,10 @@ arr.splice(0)               // remove from index 0 to end of array
 ### Searching
 
 ```javascript
-includes()                  //> Boolean
-find(), findIndex()         //> String
-indexOf(), lastIndexOf()    //> Number
-some(), every()             //> Boolean
+includes()                    //> Boolean
+find(), findIndex()           //> String
+indexOf(), lastIndexOf()      //> Number
+some(), every()               //> Boolean
 ```
 
 ### Sorting
@@ -95,12 +95,12 @@ Array.prototype.sort()
 Array.prototype.reverse()
 
 // Sorting an array of numbers
-arr.sort()                  // [1,2,3,4,5]
-arr.sort().reverse()        // [5,4,3,2,1]
+arr.sort()                    // [1,2,3,4,5]
+arr.sort().reverse()          // [5,4,3,2,1]
 
 // Sorting with comparison functions
-arr.sort((a, b) => a - b)   // [1,2,3,4,5]
-arr.sort((a, b) => b - a)   // [5,4,3,2,1]
+arr.sort((a, b) => a - b)     // [1,2,3,4,5]
+arr.sort((a, b) => b - a)     // [5,4,3,2,1]
 ```
 
 ### Copying/Cloning
@@ -108,7 +108,7 @@ arr.sort((a, b) => b - a)   // [5,4,3,2,1]
 ```javascript
 // only useful for primitive values
 
-const arr2 = [...arr1]      // shallow copy
+const arr2 = [...arr1]        // shallow copy
 ```
 
 ### Converting
@@ -117,6 +117,17 @@ const arr2 = [...arr1]      // shallow copy
 toString()
 toLocaleString()
 ```
+
+## INBOX
+
+```javascript
+Array.prototype.copyWithin()
+
+Array.prototype.keys()
+Array.prototype.values()
+Array.prototype.entries()
+```
+
 <br />
 
 ## Reference
