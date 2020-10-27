@@ -25,6 +25,8 @@ http :3000                  # http localhost:3000
 http -f POST httpbin.org/post name="Scott Voyles"
 ```
 
+<br />
+
 ## Reference
 
 [https://httpie.org/docs](https://httpie.org/docs)

@@ -17,11 +17,15 @@
     </details>
 
     <nuxt-content :document="cheatsheet" class="my-8" />
+
+    <AppGoToTop />
   </article>
 </template>
 
 <script>
-export default{
+import AppGoToTop from '@/components/AppGoToTop.vue'
+
+export default {
   async asyncData({ $content, params }) {
     const cheatsheet = await $content('cheatsheets', params.slug).fetch()
 

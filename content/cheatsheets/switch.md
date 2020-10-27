@@ -28,6 +28,8 @@ switch (expression) {
 }
 ```
 
+<br />
+
 ## Reference
 
 [switch - mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)<br />

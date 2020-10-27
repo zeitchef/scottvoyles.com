@@ -3,35 +3,6 @@ title: vuex
 description: vue, state management, library, javascript
 ---
 
-### Installation
-
-```bash
-# Vue 2
-yarn add vuex
-
-# Vue 3
-yarn add @vuex/next --save
-```
-
-### Setup
-
-```bash
-# Vue 2
-import Vue from 'vue'
-import Vuex from 'vuex'
-
-Vue.use(Vuex)
-
-# Vue 3
-import { createApp } from 'vue'
-import { createStore } from 'vuex'
-
-const app = createApp({})
-const store = createStore({})
-
-app.use(store)
-```
-
 ### Basic Store
 
 ```js
@@ -62,7 +33,7 @@ const store = createStore({
 })
 ```
 
-<span class="scrolltop">[Go to top](#top)</span>
+<br />
 
 ## Reference
 

@@ -1,6 +1,6 @@
 <template>
   <div class="w-full max-w-6xl px-8 mx-auto mt-8 mb-16 md:mb-0">
-    <h1 class="mb-4 text-3xl">WTF</h1>
+    <h1 class="mb-8 text-4xl">What the F#@k?</h1>
     <AppSearchInput
       @filter-cheatsheets="filterCheatsheets($event)"
       @clear-results="resetFilteredCheatsheets" />

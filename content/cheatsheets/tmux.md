@@ -73,7 +73,7 @@ prefix Down       # resize pane to the bottom
 prefix Up         # resize pane to the top
 ```
 
-<span class="scrolltop">[Go to top](#top)</span>
+<br />
 
 ## Reference
 

@@ -2,7 +2,7 @@
 title: fetch
 description: api, javascript, web
 ---
-### Syntax
+## Syntax
 
 ```js
 fetch(url, options)
@@ -10,9 +10,7 @@ fetch(url, options)
   .catch(error => // handle network error)
 ```
 
-### Examples
-
-#### Get JSON from a URL
+### Get JSON from a URL
 
 ```js
 fetch('https://api.github.com/orgs/nodejs')
@@ -23,7 +21,7 @@ fetch('https://api.github.com/orgs/nodejs')
   .catch(error => console.error(error))
 ```
 
-#### Adding users from an API to the DOM
+### Adding users from an API to the DOM
 
 ```js
 const url = 'https://jsonplaceholder.typicode.com/users'
@@ -76,6 +74,8 @@ function postForm(url, formSelector) {
   .catch(error => console.error(error))
 }
 ```
+
+<br />
 
 ## Reference
 

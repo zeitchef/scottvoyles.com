@@ -11,6 +11,8 @@ components and code sharing in front-end development.
 .block--modifier {}
 ```
 
+<br />
+
 ## Reference
 http://getbem.com/naming/  
 https://cssguidelin.es/#bem-like-naming  

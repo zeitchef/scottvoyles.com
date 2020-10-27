@@ -27,6 +27,8 @@ mux debug [project]         # show shell commands for project
 mux version
 ```
 
+<br />
+
 ## Reference
 
 [https://github.com/tmuxinator/tmuxinator](https://github.com/tmuxinator/tmuxinator)
