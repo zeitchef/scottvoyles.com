@@ -5,5 +5,5 @@ description: javascript, framework
 
 ## Reference
 
-[https://vuejs.org](https://vuejs.org)  
-[https://v3.vuejs.org](https://v3.vuejs.org)
+[Vue 2](https://vuejs.org)  
+[Vue 3](https://v3.vuejs.org)
