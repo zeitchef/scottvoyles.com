@@ -1,6 +1,7 @@
 <template>
   <div class="mb-8 border-b border-snazzy-gray-300">
     <input
+      ref="searchbar"
       type="search"
       autocomplete="off"
       placeholder="Search cheatsheets..."
@@ -17,6 +18,9 @@ export default {
       searchQuery: '',
       searchResults: []
     }
+  },
+  mounted() {
+    this.$refs.searchbar.focus()
   },
   watch: {
     async searchQuery(searchQuery) {
