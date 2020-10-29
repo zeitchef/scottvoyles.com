@@ -13,10 +13,10 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       searchQuery: '',
-      searchResults: []
+      searchResults: [],
     }
   },
   mounted() {
@@ -35,15 +35,17 @@ export default {
         .fetch()
 
       this.$emit('filter-cheatsheets', this.searchResults)
-    }
-  }
+    },
+  },
 }
 </script>
 
 <style scoped>
 /* Remove 'x' from search input */
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration { display: none; }
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
 </style>
