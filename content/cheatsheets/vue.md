@@ -41,6 +41,47 @@ mounted() {
 }
 ```
 
+### Prop Validations
+
+```js
+props: {
+  // basic type check, null and undefined pass
+  propA: Array|Boolean|Date|Function|Object|Number|String|Symbol,
+
+  // multiple value types
+  propB: [Number, String],
+
+  // required values
+  propC: {
+    type: String,
+    required: true
+  },
+
+  // default values
+  propD: {
+    type: Number,
+    default: 100
+  },
+
+  // object/array defaults must return factory function
+  propE: {
+    type: Object,
+    default: function() {}
+  },
+
+  // custom validator function
+  propF: {
+    validator: function (value) {
+      // run your custom validation here
+    }
+  }
+}
+```
+
+https://v3.vuejs.org/guide/component-props.html#prop-validation
+
+<br />
+
 ### Non-prop attributes
 
 - attributes not found in props or emits
