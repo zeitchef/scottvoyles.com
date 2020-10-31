@@ -1,11 +1,18 @@
 <template>
   <span>
-    <a class="float-right text-sm" href="#top">Go to top</a>
+    <a class="float-right text-sm" @click="scrollToTop">Go to top</a>
   </span>
 </template>
 
 <script>
-  export default {}
+export default {
+  methods: {
+    scrollToTop() {
+      const html = document.querySelector('html')
+      html.scrollIntoView()
+    },
+  },
+}
 </script>
 
 <style scoped>
