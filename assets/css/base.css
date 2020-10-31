@@ -29,7 +29,9 @@ a:not(.nav-link):hover {
 }
 
 ul { @apply list-none }
-li { @apply pl-4 }
+li {
+  @apply pl-2 list-inside list-disc
+}
 
 /* Inputs */
 input, textarea {
