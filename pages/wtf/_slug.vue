@@ -3,25 +3,29 @@
     <h1 name="top">{{ cheatsheet.title }}</h1>
     <p class="text-sm">
       updated:
-      <span class="text-snazzy-gray-500 dark:text-snazzy-gray-300">{{
-        formatDate(cheatsheet.updatedAt)
-      }}</span>
+      <span class="text-snazzy-gray-500 dark:text-snazzy-gray-300">
+        {{ formatDate(cheatsheet.updatedAt) }}
+      </span>
     </p>
 
+    <!-- Table of Contents -->
     <details class="mt-8">
       <summary class="outline-none">Contents</summary>
       <nav>
         <ul>
           <li v-for="link in cheatsheet.toc" :key="link.id">
-            <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+            <NuxtLink :to="`#${link.id}`">
+              {{ link.text }}
+            </NuxtLink>
           </li>
         </ul>
       </nav>
     </details>
 
+    <!-- Content -->
     <nuxt-content :document="cheatsheet" class="my-8" />
 
-    <AppGoToTop />
+    <AppGoToTop :path="cheatsheet.path" />
   </article>
 </template>
 
