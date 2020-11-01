@@ -78,7 +78,7 @@ props: {
 }
 ```
 
-https://v3.vuejs.org/guide/component-props.html#prop-validation
+<small>https://v3.vuejs.org/guide/component-props.html#prop-validation</small>
 
 <br />
 
@@ -96,7 +96,8 @@ https://v3.vuejs.org/guide/component-props.html#prop-validation
   <input type="datetime" />
 </div>
 ```
-https://v3.vuejs.org/guide/component-attrs.html
+
+<small>https://v3.vuejs.org/guide/component-attrs.html</small>
 
 <br />
 
@@ -117,5 +118,5 @@ data () {
 
 ## Reference
 
-[Vue2](https://vuejs.org)<br />
-[Vue3](https://v3.vuejs.org)<br />
+[Vue 2](https://vuejs.org)<br />
+[Vue 3](https://v3.vuejs.org)<br />
