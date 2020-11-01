@@ -1,8 +1,11 @@
 <template>
   <article class="w-full max-w-6xl px-8 mx-auto mt-8 mb-16 md:mb-0">
     <h1 name="top">{{ cheatsheet.title }}</h1>
-    <p class="text-sm">updated:
-      <span class="text-snazzy-gray-500 dark:text-snazzy-gray-300">{{ formatDate(cheatsheet.updatedAt) }}</span>
+    <p class="text-sm">
+      updated:
+      <span class="text-snazzy-gray-500 dark:text-snazzy-gray-300">{{
+        formatDate(cheatsheet.updatedAt)
+      }}</span>
     </p>
 
     <details class="mt-8">
@@ -35,10 +38,7 @@ export default {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString('en', options)
-    }
-  }
+    },
+  },
 }
 </script>
-
-<style scoped>
-</style>
