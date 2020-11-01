@@ -21,7 +21,7 @@ app.use(store)
 
 ### State
 
-- like `data()` on component instance
+- like `data()` on component instances
 - must return an object with state
 
 ```js[store]
@@ -47,10 +47,11 @@ computed: {
 - register on store in `mutations` object
 - call a mutation using `this.$store.commit(<mutation-name>, [payload])`
 - pass data using `payload`
+- must be synchronous
 
 ```js[store]
 mutations: {
-  increment (state, payload) {
+  increment (state, payloa) {
     state.counter += payload
   }
 }
@@ -79,11 +80,15 @@ methods: {
 - reduce code duplication
 - like computed properties directly in store
 - access via `this.$store.getters`
+- getters can depend on other getters
 
 ```js[store]
 getters: {
-  counter (state, [getters]) {
+  counter (state) {
     return state.counter
+  },
+  doubledCounter (_, getters) { // _ is an unused, but required argument
+    return getters.counter * 2
   }
 }
 ```
@@ -92,6 +97,39 @@ getters: {
 computed: {
   counter () {
     return this.$store.getters.counter
+  },
+  doubled () {
+    return this.$store.getters.doubledCounter
+  }
+}
+```
+
+### Actions
+
+- allow asynchronous code with mutations
+- actions can commit mutations, dispatch other actions and access getters
+- best practice: dispatch actions rather than commit mutations
+
+```js[store]
+mutations: {
+  increment (state, payload) {
+    store.counter += payload
+  }
+},
+actions: {
+  increment (context, payload) {
+    setTimeout(() => {
+      context.commit('increment', payload)
+    }, 2000)
+  }
+}
+```
+
+```js[component]
+methods: {
+  incrementCounter (value) {
+    // dispatch action rather than commit mutation
+    this.$store.dispatch('increment', value)
   }
 }
 ```
