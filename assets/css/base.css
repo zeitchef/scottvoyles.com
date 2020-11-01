@@ -3,72 +3,90 @@ html {
   font-size: var(--font-size);
   word-spacing: 1px;
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
-h1 { @apply text-4xl }
-h2 { @apply text-3xl }
-h3 { @apply text-2xl }
-h4 { @apply text-xl }
+h1 {
+  @apply text-4xl;
+}
+h2 {
+  @apply text-3xl;
+}
+h3 {
+  @apply text-2xl;
+}
+h4 {
+  @apply text-xl;
+}
 
-.heading { font-size: 32px; }
+.heading {
+  font-size: 32px;
+}
 
 /* Links */
 a:not(.nav-link) {
-  @apply border-b border-snazzy-gray-500 font-medium opacity-75 transition-opacity duration-500
+  @apply font-medium border-b opacity-75 border-snazzy-gray-500 transition-opacity duration-500;
 }
 
 a:not(.nav-link):hover {
-  @apply opacity-100
+  @apply opacity-100;
 }
 
-ul { @apply list-none }
+ul {
+  @apply list-none;
+}
 li {
-  @apply pl-2 list-inside list-disc
+  @apply pl-2 list-disc list-inside;
 }
 
 /* Inputs */
-input, textarea {
-  @apply bg-transparent border-none rounded-none outline-none resize-none py-2
+input,
+textarea {
+  @apply py-2 bg-transparent border-none rounded-none outline-none resize-none;
 }
 
 /* Buttons */
 button {
-  @apply w-32 p-2 mt-8 uppercase border border-snazzy-gray-800 font-medium outline-none
+  @apply w-32 p-2 mt-8 font-medium uppercase border outline-none border-snazzy-gray-800;
 }
 
 /* Nuxt Content */
 .nuxt-content ol,
 .nuxt-content ul {
-  @apply mt-4 list-inside
+  @apply mt-4 list-inside;
 }
 
 .nuxt-content ol {
-  @apply list-decimal
+  @apply list-decimal;
 }
 
 .nuxt-content a {
-  @apply font-medium opacity-75 transition-opacity duration-500 border-snazzy-gray-300
+  @apply font-medium opacity-75 transition-opacity duration-500 border-snazzy-gray-300;
 }
 
 .nuxt-content a:hover {
-  @apply opacity-100
+  @apply opacity-100;
 }
 
 .nuxt-content-highlight {
-  @apply relative my-4
+  @apply relative my-4;
+}
+
+.nuxt-content-highlight pre[class*='language-'] {
+  @apply pt-6;
 }
 
 .nuxt-content-highlight .filename {
-  @apply absolute right-0 text-gray-600 font-light z-10 mr-2 mt-1 text-sm
+  @apply absolute right-0 z-10 mt-1 mr-2 text-sm font-light text-gray-600;
 }
 
 .scrolltop {
-  @apply block mb-8 text-sm
+  @apply block mb-8 text-sm;
 }
