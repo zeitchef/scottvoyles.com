@@ -80,7 +80,7 @@ button {
 }
 
 .nuxt-content-highlight pre[class*='language-'] {
-  @apply pt-6;
+  @apply py-6;
 }
 
 .nuxt-content-highlight .filename {
