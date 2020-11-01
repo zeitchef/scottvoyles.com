@@ -51,7 +51,7 @@ computed: {
 
 ```js[store]
 mutations: {
-  increment (state, payloa) {
+  increment (state, payload) {
     state.counter += payload
   }
 }
@@ -133,6 +133,89 @@ methods: {
   }
 }
 ```
+
+### Helpers: mapGetters
+
+- use `mapGetters` to map store getters to local computed properties
+
+```js[component]
+import { mapGetters } from 'vuex'
+
+// mix `counter` getter into computed properties
+export default {
+  computed: {
+    ...mapGetters([ 'counter' ])
+  }
+}
+
+// mix in `counter`, renamed to `storeCounter`
+export default {
+  computed: {
+    ...mapGetters({ storeCounter: 'counter' })
+  }
+}
+```
+
+### Helpers: mapActions
+
+- use `mapActions` to map store actions to local methods
+- pass payload directly in template
+
+```html[component:template]
+<button @click="increment(2)">Add 2</button>
+```
+
+```js[component:script]
+import { mapActions } from 'vuex'
+
+// mix `increment` into local methods
+export default {
+  methods: {
+    ...mapActions([ 'increment' ])
+  }
+}
+
+// mix in 'increment', renamed to 'increase'
+export default {
+  methods: {
+    ...mapActions({ increase: 'increment' })
+  }
+}
+```
+
+### Modules: Basics
+
+- modules contain their own state, mutations, getters, actions, etc.
+- modules can contain other modules
+- always use a function to declare module state (like component data)
+
+```js[store]
+const moduleA = {
+  state: () =>({}),
+  mutations: {},
+  actions: {},
+  getters: {}
+}
+
+const moduleB = { ... }
+
+const store = createStore({
+  modules: {
+    a: moduleA,
+    b: moduleB
+  }
+})
+
+store.state.a //> `moduleA` state
+store.state.b //> `moduleB` state
+```
+
+### Modules: Namespacing
+
+- getters, mutations, and actions are global by default
+- namespaced modules have local getters, mutations and actions
+
+<br />
 
 ## Reference
 
