@@ -190,24 +190,20 @@ export default {
 - always use a function to declare module state (like component data)
 
 ```js[store]
-const moduleA = {
+const myModule = {
   state: () =>({}),
   mutations: {},
   actions: {},
   getters: {}
 }
 
-const moduleB = { ... }
-
 const store = createStore({
   modules: {
-    a: moduleA,
-    b: moduleB
+    module: myModule
   }
 })
 
-store.state.a //> `moduleA` state
-store.state.b //> `moduleB` state
+store.state.module //> `myModule` state
 ```
 
 ### Modules: Namespacing
