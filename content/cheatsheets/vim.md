@@ -6,14 +6,16 @@ description: editor, terminal
 ### Marks
 
 ```vim
+nnoremap , `      " remap go to mark
+
 " setting marks
-ma                " set/reset mark called `a` at current cursor position
+m1                " set/reset mark called `1` at current cursor position
 
 " using marks
-`a                " jump to positon
-'a                " jump to line
-d|c|y'a           " delete/change/yank from current line to mark a
-d|c|y`a           " delete/change/yank from current cursor to mark a
+,1                " jump to positon
+'1                " jump to line
+d|c|y'1           " delete/change/yank from current line to mark a
+d|c|y`1           " delete/change/yank from current cursor to mark a
 
 " viewing marks
 :marks
