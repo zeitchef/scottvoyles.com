@@ -15,6 +15,13 @@ git push -d <remote> <branch>    # remote branch
 
 ### Diffing
 
+Check for changes across branches
+
+```bash
+git diff mybranch master -- myfile
+```
+<br />
+
 Check changes on origin against local main branch
 
 ```bash
