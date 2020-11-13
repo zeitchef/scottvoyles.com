@@ -3,6 +3,16 @@ title: git
 description: source control, terminal
 ---
 
+### Branching
+
+```bash
+# Deleting branches
+git branch -d <branch>           # local branch
+git push -d <remote> <branch>    # remote branch
+```
+
+<br />
+
 ### Diffing
 
 Check changes on origin against local main branch
