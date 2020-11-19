@@ -15,7 +15,7 @@ animatable: no
 # static (default)
   - element box generated as normal
   - block elements in document flow
-  - inline elements in
+  - inline elements in content flow
 
 # relative
   - positioning context is the original element position
@@ -23,7 +23,7 @@ animatable: no
 
 # absolute
   - positioning context is the parent element position
-  - element is removed from normal flow
+  - element is removed from normal/document flow
 
 # fixed
   - positioning context is the viewport
