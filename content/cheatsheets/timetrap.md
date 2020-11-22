@@ -6,11 +6,15 @@ Timetrap is a simple command-line time tracker written in Ruby. It provides an e
 
 <br />
 
-### General
+### Aliases
 
 ```bash
-tt                  # Aliased to timetrap
+tt                  # timetrap
 tt --help           # Get help
+tti                 # timetrap in --at
+tto                 # timetrap out --at
+ttd                 # timetrap display
+ttl                 # timetrap list
 ```
 
 ### Display
@@ -29,20 +33,23 @@ tt in overture      # Create "overture" entry while checked into sheet
 tt out              # Check out of current sheet
 
 # Check in at 12:00 with a note
-tt in --at "12:00" doing something
+tti 12:00 "doing something"
 
 # Check out 1 hour ago
-tt out --at "1 hour ago"
+tto "1 hour ago"
 ```
 
 ### Edit/Append
 
 ```bash
-tt edit <entry>
+tt edit -i <id>
   --append
+  --start
+  --end
 ```
 
 <br />
 
 ## Reference
+
 https://github.com/samg/timetrap
