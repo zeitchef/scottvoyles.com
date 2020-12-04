@@ -17,6 +17,8 @@ const favoriteColor = person.favorites?.color
 
 [JavaScript Variable with Question Mark - rwieruch](https://www.robinwieruch.de/javascript-variable-question-mark)
 
+<br />
+
 Conditional assignment with ternary operator:
 
 ```js
