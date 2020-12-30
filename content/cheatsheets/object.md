@@ -17,19 +17,25 @@ obj instanceof Object   //> true
 
 ### Create
 
+Objects can be created by:
+
+1. object literals
+2. the `new` keyword
+3. Object.create or Object.assign
+
 ```js
 // literals
-const objLiteral = {}
+const obj = {}
 
 // new keyword
-let obj2 = new Object() // instaniate object from prototype constructor
-let obj3 = new Object({})
-let obj4 = new Object({ notEmpty: true }) // instaniate object with own properties
-let obj5 = Object()
+let o2 = new Object() // instaniate object from prototype constructor
+let o3 = new Object({})
+let o4 = new Object({ notEmpty: true }) // instaniate object with own properties
+let o5 = Object()
 
 // Object.create(), Object.assign()
-let obj6 = Object.create(createLiteral) // create object, setting prototype
-let obj7 = Object.assign(obj3, obj4) // create object with own properties from target to source
+let o6 = Object.create([prototype]) // create object, setting prototype
+let o7 = Object.assign(obj3, obj4) // create object with own properties from target to source
 
 // Creating objects of different types (not useful)
 let createString = new Object('hello')
@@ -41,7 +47,7 @@ let createNull = new Object(null)
 
 <br />
 
-### Limiting
+### Limit
 
 ```js
 // Object.freeze()

@@ -13,18 +13,10 @@ body {
   height: 100%;
 }
 
-h1 {
-  @apply text-4xl;
-}
-h2 {
-  @apply text-3xl;
-}
-h3 {
-  @apply text-2xl;
-}
-h4 {
-  @apply text-xl;
-}
+h1 { @apply mb-2 text-4xl; }
+h2 { @apply mb-2 text-3xl; }
+h3 { @apply mb-2 text-2xl; }
+h4 { @apply text-xl; }
 
 .heading {
   font-size: 32px;
@@ -90,3 +82,10 @@ button {
 .scrolltop {
   @apply block mb-8 text-sm;
 }
+
+/* Code
+ * style inline code tags, not pre>code tags
+code {
+  font-family: monospace;
+}
+*/
