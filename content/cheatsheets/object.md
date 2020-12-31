@@ -55,3 +55,21 @@ let createNull = new Object(null)
 // Object.isFrozen()
 // Object.isSealed()
 ```
+
+### Serialize
+
+Object serialization is the process of converting an object’s state to a string from which it can later be restored.
+
+```js
+let obj = { x: 1, y: { z: [false, null, ""] } }
+
+// JSON.stringify
+let s = JSON.stringify(obj)
+//> '{"x":1,"y":{"z":[false,null,""]}}'
+
+// JSON.parse
+let p = JSON.parse(string)
+//> { x: 1, y: { z: [false, null, ""] } }
+```
+
+<br />
