@@ -3,11 +3,11 @@ title: storage
 description: api, browser, localestorage, indexeddb, cookie, url, cache
 ---
 
-# WIP
+# WIP: Storage
 
 ### local|sessionStorage
 
-```javascript
+```js
 // sessionStorage only persists for the duration of the session
 
 setItem(key, value)
@@ -17,7 +17,7 @@ removeItem(key)
 
 ### IndexedDB
 
-```javascript
+```js
 // can store files and blobs
 // requires more code than localStorage
 // localForage uses IndexedDB with localStorage-like API
@@ -25,7 +25,7 @@ removeItem(key)
 
 ### Cookies
 
-```javascript
+```js
 // only storage solution that is also shared with server
 // sent in every request
 
@@ -35,7 +35,7 @@ document.cookie = 'key1=value1;key2=value2'
 
 ### URL query strings
 
-```javascript
+```js
 // only strings
 // max length is limited
 
@@ -50,7 +50,7 @@ window.location.search
 ### Cache API
 
 
-```javascript
+```js
 // network level
 // cache network requests
 // used originally with service workers
