@@ -27,27 +27,36 @@ zb                " place cursor line at bottom of window
 
 ### Marks
 
+
 ```vim
-nnoremap , `      " remap go to mark
+mx           Toggle mark 'x' and display it in the leftmost column
+dmx          Remove mark 'x' where x is a-zA-Z
 
-" setting marks
-m1                " set/reset mark called `1` at current cursor position
+m,           Place the next available mark
+m.           If no mark on line, place the next available mark. Otherwise, remove (first) existing mark.
+m-           Delete all marks from the current line
+m<Space>     Delete all marks from the current buffer
+]`           Jump to next mark
+[`           Jump to prev mark
+]'           Jump to start of next line containing a mark
+['           Jump to start of prev line containing a mark
+`]           Jump by alphabetical order to next mark
+`[           Jump by alphabetical order to prev mark
+']           Jump by alphabetical order to start of next line having a mark
+'[           Jump by alphabetical order to start of prev line having a mark
+m/           Open location list and display marks from current buffer
 
-" using marks
-,1                " jump to positon
-'1                " jump to line
-d|c|y'1           " delete/change/yank from current line to mark a
-d|c|y`1           " delete/change/yank from current cursor to mark a
-
-" viewing marks
-:marks
-:marks a,B
-
-" deleting marks
-:delm[arks]
+m[0-9]       Toggle the corresponding marker !@#$%^&*()
+m<S-[0-9]>   Remove all markers of the same type
+]-           Jump to next line having a marker of the same type
+[-           Jump to prev line having a marker of the same type
+]=           Jump to next line having a marker of any type
+[=           Jump to prev line having a marker of any type
+m?           Open location list and display markers from current buffer
+m<BS>        Remove all markers
 ```
-
-[Using marks](https://vim.fandom.com/wiki/Using_marks)
+[vim-signature](https://github.com/kshenoy/vim-signature)  
+[Using marks - vim wiki](https://vim.fandom.com/wiki/Using_marks)
 
 <br />
 

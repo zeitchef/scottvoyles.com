@@ -100,3 +100,6 @@ sw.*
 
 # Local Netlify folder
 .netlify
+
+# ctags
+tags
