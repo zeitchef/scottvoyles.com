@@ -67,3 +67,19 @@ qq                " begin recording macro in register q
 @q                " run macro in register q
 Q                 " my alias for @q
 ```
+
+### Snippets
+
+Use `honza/vim-snippets` since it includes Ultisnip snippets and many more.
+
+```vim
+"Plugins
+Plug 'honza/vim-snippets'
+Plug 'neoclide/coc-snippets' "prefer installing from coc settings
+
+"Search snippets
+ccl     "Coc-List and search snippets
+```
+[Snippets with CoC](https://www.chrisatmachine.com/Neovim/17-snippets/)
+
+<br />
