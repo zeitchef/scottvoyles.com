@@ -8,17 +8,17 @@ description: editor, terminal
 - Think of scrolling as moving the window over the text, not the text inside the window.
 
 ```vim
-CTRL-E            " scroll forward one line
-CTRL-D            " scroll forward half a screen
-CTRL-F            " scroll forward a full screen
+CTRL-E       " scroll forward one line
+CTRL-D       " scroll forward half a screen
+CTRL-F       " scroll forward a full screen
 
-CTRL-Y            " scroll back one line
-CTRL-U            " scroll back half a screen
-CTRL-B            " scroll back a full screen
+CTRL-Y       " scroll back one line
+CTRL-U       " scroll back half a screen
+CTRL-B       " scroll back a full screen
 
-zt                " place cursor line at top of window
-zz                " place cursor line at middle of window
-zb                " place cursor line at bottom of window
+zt           " place cursor line at top of window
+zz           " place cursor line at middle of window
+zb           " place cursor line at bottom of window
 ```
 
 [Scrolling around - vim.help](https://vim.help/03-moving-around#03.7)
@@ -29,7 +29,7 @@ zb                " place cursor line at bottom of window
 
 
 ```vim
-mx           Toggle mark 'x' and display it in the leftmost column
+mx           " Toggle mark 'x' and display it in the leftmost column
 dmx          Remove mark 'x' where x is a-zA-Z
 
 m,           Place the next available mark
@@ -55,6 +55,7 @@ m<S-[0-9]>   Remove all markers of the same type
 m?           Open location list and display markers from current buffer
 m<BS>        Remove all markers
 ```
+
 [vim-signature](https://github.com/kshenoy/vim-signature)  
 [Using marks - vim wiki](https://vim.fandom.com/wiki/Using_marks)
 
@@ -63,9 +64,9 @@ m<BS>        Remove all markers
 ### Macros
 
 ```vim
-qq                " begin recording macro in register q
-@q                " run macro in register q
-Q                 " my alias for @q
+qq          " begin recording macro in register q
+@q          " run macro in register q
+Q           " my alias for @q
 ```
 
 ### Snippets
@@ -80,6 +81,7 @@ Plug 'neoclide/coc-snippets' "prefer installing from coc settings
 "Search snippets
 ccl     "Coc-List and search snippets
 ```
+
 [Snippets with CoC](https://www.chrisatmachine.com/Neovim/17-snippets/)
 
 <br />
