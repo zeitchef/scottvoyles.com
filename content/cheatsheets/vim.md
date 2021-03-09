@@ -27,9 +27,8 @@ zb           " place cursor line at bottom of window
 
 ### Marks
 
-
-```vim
-mx           " Toggle mark 'x' and display it in the leftmost column
+```bash
+mx           # Toggle mark 'x' and display it in the leftmost column
 dmx          Remove mark 'x' where x is a-zA-Z
 
 m,           Place the next available mark
@@ -56,7 +55,7 @@ m?           Open location list and display markers from current buffer
 m<BS>        Remove all markers
 ```
 
-[vim-signature](https://github.com/kshenoy/vim-signature)  
+[vim-signature](https://github.com/kshenoy/vim-signature)<br />
 [Using marks - vim wiki](https://vim.fandom.com/wiki/Using_marks)
 
 <br />
@@ -83,5 +82,34 @@ ccl     "Coc-List and search snippets
 ```
 
 [Snippets with CoC](https://www.chrisatmachine.com/Neovim/17-snippets/)
+
+<br />
+
+### Substitution
+
+Find and replace in the current buffer:
+
+```bash
+:%s/find/replace/g
+:%s/find/replace/gc
+```
+
+Find and replace in multiple buffers using argdo/bufdo:
+
+```
+:args `rg find -l`
+:argdo %s/find/replace/g | update
+```
+
+Find and replace in multiple buffers using fzf:
+
+```bash
+:Rg
+<Tab>
+:cfdo %s/find/replace/ge | update
+```
+
+[Search and Replace in Multiple Files in Vim/Neovim](https://jdhao.github.io/2020/03/14/nvim_search_replace_multiple_file/)<br />
+[Substitution](https://vim.help/10-making-big-changes#10.2)
 
 <br />
