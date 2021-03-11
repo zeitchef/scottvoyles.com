@@ -87,6 +87,13 @@ ccl     "Coc-List and search snippets
 
 ### Substitution
 
+Find and replace in current visual selection:
+
+```bash
+:
+s/find/replace/g
+```
+
 Find and replace in the current buffer:
 
 ```bash
