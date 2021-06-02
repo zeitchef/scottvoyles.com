@@ -33,7 +33,7 @@
     <section>
       <h2>Desk & Other Gear</h2>
 
-      <p>My current workhorse is a 2020 <a href="https://www.apple.com/mac-mini/">Mac mini</a> 6-core i7 upgraded to 32GB RAM connected to a <a href="https://www.dell.com/en-us/shop/accessories/apd/210-AVJV">Dell Ultrasharp 2720Q</a> 4K monitor. I use an Apple Magic Trackpad 2 and a wireless <a href="https://www.keychron.com/products/keychron-k2-wireless-mechanical-keyboard">Keychron K2</a> mechanical keyboard.</p>
+      <p>My current workhorses are a 2020 <a href="https://www.apple.com/mac-mini/">Mac mini</a> 6-core i7 with 32GB RAM and a 2021 8-core M1 MacBook Air - both connected to a <a href="https://www.dell.com/en-us/shop/accessories/apd/210-AVJV">Dell Ultrasharp 2720Q</a> 4K monitor. I use an Apple Magic Trackpad 2 and a wireless <a href="https://www.keychron.com/products/keychron-k2-wireless-mechanical-keyboard">Keychron K2</a> mechanical keyboard.</p>
 
       <p>My desktop audio setup is intentionally simple: I use a pair of <a href="https://www.audio-technica.com/en-us/ath-m40x">Audio-Technica ATH-MT40x</a> professional monitor headphones for their detailed clarity, usually paired with the <a href="https://ifi-audio.com/products/zen-dac/">iFi Zen</a> DAC and headphone amp.</p>
     </section>
