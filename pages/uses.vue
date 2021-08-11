@@ -10,13 +10,13 @@
       <h2>Languages & Frameworks</h2>
 
       <p>
-        I use
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        I use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
           >JavaScript</a
         >
         to solve problems. When scripting or writing CLI's, I'll usually go with
         my first love <a href="https://www.ruby-lang.org/en">Ruby</a>, but I'm
-        doing more and more with <a href="https://nodejs.org">Node.js</a>. I put
+        doing more and more with <a href="https://nodejs.org">Node.js</a> and <a
+        href="https://www.lua.org/">Lua</a>. I put
         a lot of focus on writing semantic
         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>
         with an emphasis on accessibility. When writing
@@ -28,7 +28,8 @@
         I like to use <a href="https://vuejs.org">Vue.js</a> superpowered by
         <a href="https://nuxtjs.org">Nuxt.js</a> for basically any type of
         frontend I'm building - whether single-page applications or static
-        sites.
+        sites. For smaller projects or prototyping, I'll usually reach for <a
+        href="https://alpinejs.dev/">Alpine.js</a>.
       </p>
     </section>
 
