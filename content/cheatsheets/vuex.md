@@ -5,7 +5,7 @@ description: vue, state management, library, javascript
 
 ### Installation
 
-```bash
+```bash[v4.x]
 yarn add vuex@next --save
 ```
 
@@ -21,6 +21,7 @@ app.use(store)
 
 ### State
 
+- single state tree (single source of truth)
 - like `data()` on component instances
 - must return an object with state
 
