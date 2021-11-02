@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
-  /* gradientmagic.com */
+  /* https://www.gradientmagic.com/collection/lightbg/gradient/1574607276017 */
   .gradient-light {
     background: linear-gradient(
         339deg,
@@ -45,6 +45,7 @@
         center no-repeat;
   }
   @variants dark {
+    /* https://www.gradientmagic.com/collection/darkbg/gradient/1575045512171 */
     .gradient-dark {
       background-image: linear-gradient(
           12deg,
