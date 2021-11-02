@@ -8,7 +8,7 @@
       <p class="text-2xl md:text-3xl">
         I'm a frontend software developer and musician.
       </p>
-      <button class="transiton-colors duration-500 ease-in-out hover:bg-snazzy-gray-900 hover:text-snazzy-gray-100 dark:border-snazzy-white dark:hover:bg-snazzy-white dark:hover:text-snazzy-gray-800" >
+      <button class="transiton-colors duration-500 ease-in-out hover:bg-snazzy-gray-900 hover:text-snazzy-gray-100 dark:border-snazzy-white dark:hover:bg-snazzy-white dark:hover:text-snazzy-gray-800">
         <nuxt-link to="/contact" class="border-none">Contact me</nuxt-link>
       </button>
     </section>
@@ -21,6 +21,6 @@ export default {
     return {
       hello: `<Hello />`,
     }
-  },
+  }
 }
 </script>
