@@ -38,7 +38,17 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['@nuxtjs/axios', '@nuxt/content', '@nuxtjs/robots', '@nuxtjs/gtm'],
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxt/content',
+    '@nuxtjs/robots',
+    '@nuxtjs/gtm',
+    '@nuxtjs/sentry',
+  ],
+
+  sentry: {
+    dsn: 'https://f49d71da3d864371bd57ca4a6003813b@o1053080.ingest.sentry.io/6046335',
+  },
 
   googleFonts: {
     families: {
@@ -83,4 +93,4 @@ export default {
     fallback: 'light',
     classSuffix: '',
   },
-};
+}

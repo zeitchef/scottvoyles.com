@@ -24,12 +24,17 @@ export default {
       const path = this.$route.path
       const lastChar = path.charAt(path.length - 1)
 
-      if (lastChar == '/' && path.length > 1) {
-        return path.substring(0, path.length - 1)
-      } else if (lastChar == '/' && path.length == 1) {
-        return 'zeitchef@gmail.com'
-      } else {
-        return path
+      try {
+        if (lastChar == '/' && path.length > 1) {
+          return path.substring(0, path.length - 1)
+        } else if (lastChar == '/' && path.length == 1) {
+          return 'zeitchef@gmail.com'
+        } else {
+          return path
+        }
+      } catch (error) {
+        console.error(error)
+        this.$sentry.captureException(error)
       }
     }
   }
