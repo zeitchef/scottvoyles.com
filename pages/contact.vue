@@ -4,13 +4,7 @@
 
       <section class="flex-1 p-8 mb-16 md:mb-0 contact contact-left">
         <form name="contact" method="post" data-netlify-honeypot="bot-field" data-netlify="true">
-          <input type="hidden" value="contact" name="contact" />
-          <div class="hidden">
-            <label for="bot-field">
-              Don't input text here if you're human:
-              <input type="text" name="bot-field" id="bot-field">
-            </label>
-          </div>
+          <input type="hidden" value="contact" name="form-name" />
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" class="block w-full">
