@@ -3,7 +3,8 @@
     <main class="flex items-center max-w-6xl px-8 mx-auto mt-8">
 
       <section class="flex-1 p-8 mb-16 md:mb-0 contact contact-left">
-        <form name="contact" method="post" netlify-honeypot="bot-field" netlify>
+        <form name="contact" method="post" data-netlify-honeypot="bot-field" data-netlify="true">
+          <input type="hidden" value="contact" name="contact" />
           <div class="hidden">
             <label for="bot-field">
               Don't input text here if you're human:
