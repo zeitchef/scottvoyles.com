@@ -5,7 +5,7 @@
 
       <p>Since 2016, I've worked professionally as a frontend software developer in startup and large corporate settings, and as freelancer. My clients include global agencies all the way to individuals.</p>
 
-      <p>A list of languages, tools and gear I use everyday can be found <n-link to="/uses">here</n-link>.</p>
+      <!-- <p>A list of languages, tools and gear I use everyday can be found <n-link to="/uses">here</n-link>.</p> -->
 
       <div class="flex justify-center">
         <hr class="w-3/5 mt-4 mb-8" />
